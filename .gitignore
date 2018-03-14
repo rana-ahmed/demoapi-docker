@@ -2,4 +2,4 @@
 .python-version
 .idea/
 .log
-__pycache__/
+*/__pycache__
