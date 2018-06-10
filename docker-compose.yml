@@ -10,5 +10,10 @@ services:
       - "8989:8989"
     depends_on:
       - db
+      - migrate
   db:
     image: postgres
+  migrate:
+    build: .
+    command: python manage.py migrate
+
